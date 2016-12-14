@@ -18,3 +18,5 @@ puts "First Name: #{first_name}"
     puts "Last Name: #{last_name}"
     puts "City: #{city_name}"
     puts "State: #{state_name}"
+
+#testing text w/visual studio code
