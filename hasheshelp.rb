@@ -1,5 +1,11 @@
 #Help file on hashes and notes
 
+#Notes
+#The keys in a hash are similar to the indices of an array in how I can designate and access individual values. This is one of the main points of the lesson.
+
+
+
+
 #Example of hash using bracket notation and the Hash.new command.
 #Hash new creates a new hash set to whatever I called it in this case pets. 
 #Notice how pets is the name for the hash and Hash.new is the command creating a new hash called pets. Got this wrong first time.
