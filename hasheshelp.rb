@@ -30,3 +30,15 @@ my_hash = {
 puts my_hash["name"]
 puts my_hash["age"]
 puts my_hash["hungry?"]
+
+#Iterating over a hash about memes
+my_hash = Hash.new
+my_hash["pepe"] = "4chan"
+my_hash["kek"] = "god of chaos"
+
+my_hash.each do |meme, definition|
+    puts "#{meme}: #{definition}"
+end
+#Creates new hash using Hash.new called my_hash
+#defines the memes against their definition
+#uses .each do to iterate the hash and puts the memes with their definition
