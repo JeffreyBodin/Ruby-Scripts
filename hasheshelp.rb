@@ -42,3 +42,17 @@ end
 #Creates new hash using Hash.new called my_hash
 #defines the memes against their definition
 #uses .each do to iterate the hash and puts the memes with their definition
+
+#default value and non-existing keys hashes notes
+h = Hash.new("nothing here")
+
+puts h
+# {}
+
+puts h["kitty"]
+# nothing here
+
+#in the above example a new hash called h is created that has a default value of "nothing here"
+#then puts {} which is the value of h (cause there is no value) which shows that the hash h is really empty
+#then try to puts h["kitty"] however it only puts nothing here because that is the default value that was defined at the begining
+#If you have a hash with a default value, and you try to access a non-existent key, you get that default value.
