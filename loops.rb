@@ -16,7 +16,7 @@ print "Ruby!"
 end
 # Here .times iterator is used instead of a loop to print 30 times.
 
-#Iterating over arrays/hashes Notes
+#Iterating over arrays Notes
 
 #Example 1
 numbers = [1, 2, 3, 4, 5]
@@ -35,3 +35,38 @@ languages.each { |element| puts element }
 s = [["ham", "swiss"], ["turkey", "cheddar"], ["roast beef", "gruyere"]]
 s.each { |sub_array| puts sub_array }
 #This puts each indivdual element within the 3 elements of the array
+
+#Iterating over hashes Notes
+
+#When iterating over hashes, we need two placeholder variables to represent each key/value pair.
+
+#Example 1
+restaurant_menu = {
+  "noodles" => 4,
+  "soup" => 3,
+  "salad" => 2
+}
+
+restaurant_menu.each do |item, price|
+  puts "#{item}: #{price}"
+end
+#In the example above, we create a new hash called restaurant_menu
+#We loop through the restaurant_menu hash.
+#Then assign the key to item and the value to price for each iteration.
+#This puts out each menu item: price per item
+noodles: 4
+soup: 3
+salad: 2
+
+#Example 2
+secret_identities = {
+  "The Batman" => "Bruce Wayne",
+  "Superman" => "Clark Kent",
+  "Wonder Woman" => "Diana Prince",
+  "Freakazoid" => "Dexter Douglas"
+}
+
+secret_identities.each do |superhero, identity|
+    puts "#{superhero}: #{identity}"
+end
+#This iterator over the hash secret_identities puts the superhero along with thier respective secret_identities
