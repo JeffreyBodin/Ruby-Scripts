@@ -16,7 +16,7 @@ print "Ruby!"
 end
 # Here .times iterator is used instead of a loop to print 30 times.
 
-#Iterating over loops/hashes Notes
+#Iterating over arrays/hashes Notes
 
 #Example 1
 numbers = [1, 2, 3, 4, 5]
@@ -29,3 +29,9 @@ numbers.each { |element| puts element }
 languages = ["HTML", "CSS", "JavaScript", "Python", "Ruby"]
 languages.each { |element| puts element }
 #Similar to the first example just iterating over and array
+
+#Iterating over multidimensional arrays
+#Example is a 2-D array (b/c it is a single array filled with 3 single arrays i think not entirely sure yet come back to this)
+s = [["ham", "swiss"], ["turkey", "cheddar"], ["roast beef", "gruyere"]]
+s.each { |sub_array| puts sub_array }
+#This puts each indivdual element within the 3 elements of the array
